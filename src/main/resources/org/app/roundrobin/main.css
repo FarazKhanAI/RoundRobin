@@ -1,0 +1,164 @@
+/* ===============================
+   Global Styles
+   =============================== */
+.root {
+    -fx-font-family: "Segoe UI", "Roboto", Arial, sans-serif;
+    -fx-background-color: #ECF0F1;
+    -fx-text-fill: #2C3E50;
+}
+
+/* ===============================
+   Labels
+   =============================== */
+.label {
+    -fx-text-fill: #2C3E50;
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+}
+
+.label.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2C3E50;
+}
+
+/* ===============================
+   Buttons
+   =============================== */
+.button {
+    -fx-background-color: #69a4b3;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8 16;
+    -fx-background-radius: 6;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,0.2) , 3,0,0,1 );
+    -fx-border-color: transparent;
+    -fx-border-radius: 6;
+    -fx-transition: 0.2s;
+}
+
+.button:hover {
+    -fx-background-color: #34495E;
+}
+
+.button:pressed {
+    -fx-background-color: #1A252F;
+}
+
+/* Accent (important) button */
+.button.accent {
+    -fx-background-color: #E74C3C;
+}
+.button.accent:hover {
+    -fx-background-color: #C0392B;
+}
+
+/* Success button */
+.button.success {
+    -fx-background-color: #27AE60;
+}
+.button.success:hover {
+    -fx-background-color: #1E8449;
+}
+
+/* Warning button */
+.button.warning {
+    -fx-background-color: #F39C12;
+}
+.button.warning:hover {
+    -fx-background-color: #D68910;
+}
+
+/* ===============================
+   Text Fields
+   =============================== */
+.text-field {
+    -fx-background-color: white;
+    -fx-text-fill: #2C3E50;
+    -fx-padding: 6 10;
+    -fx-border-color: #BDC3C7;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+
+.text-field:focused {
+    -fx-border-color: #3498DB;
+    -fx-background-color: #FFFFFF;
+}
+
+/* ===============================
+   Slider
+   =============================== */
+.slider .track {
+    -fx-background-color: #BDC3C7;
+    -fx-background-radius: 4;
+}
+.slider .thumb {
+    -fx-background-color: #E74C3C;
+    -fx-background-radius: 50%;
+}
+
+/* ===============================
+   VBox / Panel Styles
+   =============================== */
+.vbox {
+    -fx-background-color: transparent;
+}
+
+/* Control Panel Styling */
+.control-panel {
+    -fx-background-color: #2C3E50;
+    -fx-padding: 16;
+    -fx-spacing: 12;
+}
+.control-panel .label {
+    -fx-text-fill: #ECF0F1;
+}
+
+/* Statistics Panel */
+.stats-panel {
+    -fx-background-color: white;
+    -fx-padding: 16;
+    -fx-spacing: 10;
+    -fx-border-color: #BDC3C7;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+}
+
+/* ===============================
+   Queue Visualization
+   =============================== */
+.queue-node {
+    -fx-background-color: white;
+    -fx-border-color: #2C3E50;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10;
+    -fx-font-weight: bold;
+}
+
+.queue-node.running {
+    -fx-background-color: #27AE60;
+    -fx-text-fill: white;
+}
+.queue-node.completed {
+    -fx-background-color: #BDC3C7;
+    -fx-text-fill: #7F8C8D;
+}
+
+/* ===============================
+   Gantt Chart Styling
+   =============================== */
+.gantt-bar {
+    -fx-background-radius: 6;
+    -fx-padding: 6;
+    -fx-font-size: 12px;
+    -fx-text-fill: white;
+}
+
+/* Example colors for processes */
+.gantt-bar.p1 { -fx-background-color: #3498DB; }
+.gantt-bar.p2 { -fx-background-color: #9B59B6; }
+.gantt-bar.p3 { -fx-background-color: #E74C3C; }
+.gantt-bar.p4 { -fx-background-color: #27AE60; }
