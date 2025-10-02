@@ -3,7 +3,7 @@
 A **JavaFX desktop application** that simulates the **Round-Robin CPU Scheduling algorithm** using a **circular linked list**.  
 This project is designed for the **Data Structures (Fourth Semester)** course and provides both **educational insights** and an **interactive visualization** of how process scheduling works in Operating Systems.
 
----
+
 
 ## 🚀 Features
 
@@ -46,30 +46,48 @@ This project is designed for the **Data Structures (Fourth Semester)** course an
 
 ## 📂 Project Structure
 
+- **RoundRobin/**
+  - `pom.xml` → Maven build file
+  - `module-info.java` → Java module configuration
+  - `.gitignore`
+  - `README.md`
 
-RoundRobin
-├─ pom.xml # Maven build file
-├─ module-info.java # Java module configuration
-├─ .gitignore
-├─ README.md
-├─ src/main/java/org/app/roundrobin
-│ ├─ MainApp.java # Application entry point
-│ ├─ controller/ # GUI and simulation controllers
-│ ├─ model/ # Data structures (Process, CircularLinkedList, etc.)
-│ ├─ algorithm/ # Round-Robin scheduler + metrics calculator
-│ ├─ view/ # Visualization components
-│ └─ utils/ # Constants and File utilities
-├─ src/main/resources/org/app/roundrobin
-│ ├─ main.css # Modern UI styles
-│ └─ main.fxml # FXML (placeholder for future use)
-└─ src/test/java/org/app/roundrobin
-├─ CircularLinkedListTest.java
-└─ RoundRobinSchedulerTest.java
+  - **src/main/java/org/app/roundrobin/**
+    - `MainApp.java` → Application entry point
 
+    - **controller/**
+      - `MainController.java` → Main GUI controller
+      - `SimulationController.java` → Simulation logic controller
+      - `AnimationController.java` → Animation management
 
+    - **model/**
+      - `Process.java` → Process entity with scheduling attributes
+      - `ProcessNode.java` → Node for circular linked list
+      - `CircularLinkedList.java` → Ready queue implementation
+      - `Scheduler.java` → Main scheduling logic
+      - `SimulationState.java` → Tracks current simulation state
 
+    - **algorithm/**
+      - `RoundRobinScheduler.java` → Core Round-Robin algorithm implementation
+      - `TimeManager.java` → Simulation timing control
+      - `MetricsCalculator.java` → Performance metrics calculations
 
----
+    - **view/**
+      - `ProcessNodeView.java` → Visual process representation
+      - `QueueVisualization.java` → Circular queue display
+      - `GanttChart.java` → Timeline visualization
+      - `StatisticsView.java` → Metrics display
+
+    - **utils/**
+      - `Constants.java` → Application constants
+      - `StyleManager.java` → CSS and styling utilities
+      - `FileHandler.java` → Import/export functionality
+
+  - **src/main/resources/org/app/roundrobin/**
+    - `main.css` → Modern UI styles
+    - `main.fxml` → FXML (placeholder for future use)
+
+  
 
 ## ⚙️ Installation & Setup
 
@@ -79,10 +97,7 @@ git clone https://github.com/FarazKhanAI/RoundRobin.git
 
 cd roundrobin-simulator
 
-
-
 mvn clean install
-
 
 mvn javafx:run
 
