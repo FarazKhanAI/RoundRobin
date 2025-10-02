@@ -75,7 +75,8 @@ RoundRobin
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/roundrobin-simulator.git
+git clone https://github.com/FarazKhanAI/RoundRobin.git
+
 cd roundrobin-simulator
 
 
