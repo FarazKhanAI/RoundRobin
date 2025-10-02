@@ -4,9 +4,7 @@ import org.app.roundrobin.model.CircularLinkedList;
 import org.app.roundrobin.model.Process;
 import org.app.roundrobin.model.ProcessNode;
 import org.app.roundrobin.model.SimulationState;
-import org.app.roundrobin.algorithm.MetricsCalculator;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**

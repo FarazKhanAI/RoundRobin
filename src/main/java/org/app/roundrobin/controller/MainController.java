@@ -5,8 +5,7 @@ import javafx.scene.control.*;
 import javafx.scene.layout.*;
 import org.app.roundrobin.view.QueueVisualization;
 import org.app.roundrobin.view.GanttChartView;
-import org.app.roundrobin.model.SimulationState;
-import org.app.roundrobin.algorithm.RoundRobinScheduler;
+
 
 public class MainController {
     private BorderPane root;
